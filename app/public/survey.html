@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FriendFinder</title>
+
+<!-- Bootstrap CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<!-- JQuery CDN -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+<!-- Optional Bootstrap CDN-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>	
+<!-- Bootstrap FontAwesome CDN-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
+</head>
+<body>
+
+	<div class="container">
+		<div class="jumbotron">
+			<h1 class=""><i class="fa fa-facebook-square" aria-hidden="true"></i> Friend Finder</h1>
+			<hr>
+			<h2 class="">Answer a few simple questions. </h2>
+			<h2 class="">Find the friend with the closest compatibility!</h2>
+			<br>
+
+			<div class="">
+				<a href="/"><button type="button" class="btn btn-lg btn-primary"><h4><span class="glyphicon glyphicon-list-alt"></span> Home</h4></button></a>	
+			</div>
+		</div>
+		<div class="col-lg-offset-2 col-lg-8">
+			<form>
+				<div class="form-group">
+					<label for='name'>Name</label>
+					<input type='text' class='form-control' id='name' placeholder='Firstname Lastname'>
+				</div>
+				<div class="form-group">
+					<label for='userPhoto'>Link to photo</label>
+					<input type='text' class='form-control' id='photo' placeholder='https://www.linktoyourphoto.com'>
+				</div>
+				
+				<div class='form-group'>
+					<h3><strong>Question 1:</strong></h3>
+					<label for='q1'>I enjoy cooking at home vs trying a new restaurant.</label>
+					<select data-placeholder="" class="form-control" id="q1">
+						<option value=""></option>
+						<option value="1">1 (Strongly Disagree)</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 (Strongly Agree)</option>
+					</select>
+				</div>	
+
+					<h3><strong>Question 2</strong></h3>
+					<label for='q2'>I'd rather watch a movie I've seen already than see a new film.</label>
+					<select data-placeholder="" class="form-control" id="q2">
+						<option value=""></option>
+						<option value="1">1 (Strongly Disagree)</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 (Strongly Agree)</option>
+					</select>
+
+
+					<h3><strong>Question 3</strong></h3>
+					<label for='q3'>The only way to judge success is to compare yourself to your peers.</label>
+					<select data-placeholder="" class="form-control" id="q3">
+						<option value=""></option>
+						<option value="1">1 (Strongly Disagree)</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 (Strongly Agree)</option>
+					</select>
+
+
+					<h3><strong>Question 4</strong></h3>
+					<label for='q4'>You enjoy small talk with coworkers.</label>
+					<select data-placeholder="" class="form-control" id="q4">
+						<option value=""></option>
+						<option value="1">1 (Strongly Disagree)</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 (Strongly Agree)</option>
+					</select>
+
+
+					<h3><strong>Question 5</strong></h3>
+					<label for='q5'>I'd rather play a sport than watch a sporting event.</label>
+					<select data-placeholder="" class="form-control" id="q5">
+						<option value=""></option>
+						<option value="1">1 (Strongly Disagree)</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 (Strongly Agree)</option>
+					</select>
+
+
+					<h3><strong>Question 6</strong></h3>
+					<label for='q6'>Booze is necessary for an epic night out.</label>
+					<select data-placeholder="" class="form-control" id="q6">
+						<option value=""></option>
+						<option value="1">1 (Strongly Disagree)</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 (Strongly Agree)</option>
+					</select>
+
+
+					<h3><strong>Question 7</strong></h3>
+					<label for='q7'>Pepsi is better than Coca-Cola.</label>
+					<select data-placeholder="" class="form-control" id="q7">
+						<option value=""></option>
+						<option value="1">1 (Strongly Disagree)</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 (Strongly Agree)</option>
+					</select>
+
+					<h3><strong>Question 8</strong></h3>
+					<label for='q8'>Nothing beats a great nap.</label>
+					<select data-placeholder="" class="form-control" id="q8">
+						<option value=""></option>
+						<option value="1">1 (Strongly Disagree)</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 (Strongly Agree)</option>
+					</select>
+
+					<h3><strong>Question 9</strong></h3>
+					<label for='q9'>Sweet treats beat out savory snacks every time.</label>
+					<select data-placeholder="" class="form-control" id="q9">
+						<option value=""></option>
+						<option value="1">1 (Strongly Disagree)</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 (Strongly Agree)</option>
+					</select>
+
+					<h3><strong>Question 10</strong></h3>
+					<label for='q10'>The government is hiding evidence of extra terrestrial visitors.</label>
+					<select data-placeholder="" class="form-control" id="q10">
+						<option value=""></option>
+						<option value="1">1 (Strongly Disagree)</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 (Strongly Agree)</option>
+					</select>
+			</form>
+		<br>
+		<br>
+
+		<button type="submit" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#bestFriendModal" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
+ Submit</button>
+
+		<hr>
+	    <footer class="footer">
+	      <div class="container">
+		        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/mjdefrank/FriendFinder">GitHub Repo</a></p>
+	      </div>
+	    </footer>
+
+	</div>
+
+	<!-- MODAL -->
+	<div class="modal" id="bestFriendModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <!-- <h5 class="modal-title"></h5> -->
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body">
+				<!-- MODAL BODY -->
+			  <p>Congratulations! We've found your nearest match! Your new best friend is:</p>
+			  <br />
+			  <p>Name: <span id="matchName"></span></p>
+			  <img id="matchPhoto" alt="Sorry, no match was provided">
+			  
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-primary">Save changes</button>
+			  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			</div>
+		  </div>
+		</div>
+	  </div>
+
+	<!-- jQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<!-- Handle post request for submit button -->
+	<script type="text/javascript">
+		$("#submit").on("click", function(event) {
+			//prevent empty form submission
+			event.preventDefault();
+			//create a new profile object
+			const newProfile = {
+				name: $("#name").val(),
+				photo: $("#photo").val(),
+				scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val(),]
+			};
+			// POST request
+			$.post("./api/friends", newProfile, function(data) {
+				$("#matchName").text(data.name);
+				$("#matchPhoto").attr("src", data.photo);
+				$("#bestFriendModal").modal("toggle");
+				console.log(data);
+			}, 'json');
+		
+		});    
+	</script>
+
+</body>
+</html>
