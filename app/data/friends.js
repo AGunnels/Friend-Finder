@@ -1,7 +1,7 @@
 var friends = [
 	{
-		'name': 'Ron Swanson',
-		'photo': 'https://uproxx.files.wordpress.com/2016/01/ronswanson-bann.jpg?quality=100&w=650',
+		'name': 'Meryl Streep',
+		'photo': 'https://www.picsofcelebrities.com/celebrity/meryl-streep/pictures/meryl-streep-pictures.html',
 		'scores': [
 			5,
 			5,
@@ -16,8 +16,8 @@ var friends = [
 		]
 	},
 	{
-		'name': 'Alan Garner',
-		'photo': 'https://memegenerator.net/img/images/600x600/11198479/alan-garner.jpg',
+		'name': 'Catherine Zeta-Jones',
+		'photo': 'http://catherinezetajones.com/',
 		'scores': [
 			5,
 			5,
@@ -32,8 +32,8 @@ var friends = [
 		]
 	},
 	{
-		'name': 'Crazy Cat Lady',
-		'photo': 'https://az616578.vo.msecnd.net/files/2016/03/25/635945323776138309-1850101306_crazy-cat-lady-color.jpg',
+		'name': 'Gloria Estafan',
+		'photo': 'https://www.gettyimages.com/detail/news-photo/gloria-estefan-performs-on-stage-at-the-birmingham-nec-on-news-photo/185661352#/gloria-estefan-performs-on-stage-at-the-birmingham-nec-on-december-picture-id185661352',
 		'scores': [
 			5,
 			5,
